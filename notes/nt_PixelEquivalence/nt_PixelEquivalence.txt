@@ -1,0 +1,1 @@
+/!\ Un pixel dans le jeu correspond à 4 pixel de la fenètre /!\

@@ -1,0 +1,34 @@
+//GRAPHICS
+#macro	FRAME_RATE	60
+#macro	TILE_SIZE	32
+#macro	ROOM_START	rDebug_Test
+
+#macro	RESOLUTION_W	640
+#macro	RESOLUTION_H	360
+
+#macro WATERDIVISION 5
+
+//SOUNDS PRIORITY
+#macro	MUSIC_PRIORITY	0
+#macro	ALARM_PRIORITY	1
+#macro	SHOOT_PRIORITY	2
+
+//ENEMY AI
+enum	ENEMYSTATE
+{
+	IDLE,
+	WANDER,
+	CHASE,
+	ATTACK,
+	HURT,
+	DIE,
+	WAIT
+}
+
+//LOCALE
+enum LOCALE
+{
+	EN,
+	FR,
+	DE
+}

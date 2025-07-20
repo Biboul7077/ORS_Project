@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"The_Landfill___ORS___Layer4_Fight",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":18.0,
+  "name":"The_Landfill___ORS___Layer4_Fight",
+  "parent":{
+    "name":"The_Landfill__ORS",
+    "path":"folders/Sons/Music/The_Landfill__ORS.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"The_Landfill___ORS___Layer4_Fight.ogg",
+  "type":0,
+  "volume":1.0,
+}

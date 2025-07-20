@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Main_Title__ORS",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":3,
+  "conversionMode":0,
+  "duration":84.312,
+  "name":"Main_Title__ORS",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Sons/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Main_Title__ORS.mp3",
+  "type":0,
+  "volume":1.0,
+}

@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"nt_PixelEquivalence",
+  "name":"nt_PixelEquivalence",
+  "parent":{
+    "name":"ORS_Project",
+    "path":"ORS_Project.yyp",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}
