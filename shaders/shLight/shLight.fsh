@@ -1,4 +1,3 @@
-
 varying vec2 pos; //current pixel position
 varying vec4 col;
 varying vec2 v_vTexcoord;

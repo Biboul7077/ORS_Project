@@ -1,4 +1,3 @@
-
 varying float tdis; //top distance
 varying float ldis; //light distance
 
