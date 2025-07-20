@@ -16,7 +16,7 @@ u_dir = shader_get_uniform(shLight,"u_dir");
 u_fov = shader_get_uniform(shLight,"u_fov");
 u_nmap = shader_get_sampler_index(shLight,"u_nmap");
 
-u_pos2 = shader_get_uniform(sh_shadow,"u_pos");
+u_pos2 = shader_get_uniform(shShadow,"u_pos");
 
 //Vertex format and buffer setup
 vertex_format_begin();
