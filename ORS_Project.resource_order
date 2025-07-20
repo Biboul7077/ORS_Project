@@ -55,6 +55,7 @@
     {"name":"oButton_Start","order":2,"path":"objects/oButton_Start/oButton_Start.yy",},
     {"name":"oCam","order":4,"path":"objects/oCam/oCam.yy",},
     {"name":"oEnemy_Drone","order":3,"path":"objects/oEnemy_Drone/oEnemy_Drone.yy",},
+    {"name":"oLightMoving","order":4,"path":"objects/oLightMoving/oLightMoving.yy",},
     {"name":"oLights","order":3,"path":"objects/oLights/oLights.yy",},
     {"name":"oLightSetup","order":9,"path":"objects/oLightSetup/oLightSetup.yy",},
     {"name":"oParticles","order":2,"path":"objects/oParticles/oParticles.yy",},

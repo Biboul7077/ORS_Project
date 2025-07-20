@@ -88,6 +88,7 @@
     {"id":{"name":"oCol","path":"objects/oCol/oCol.yy",},},
     {"id":{"name":"oEnemy_Drone","path":"objects/oEnemy_Drone/oEnemy_Drone.yy",},},
     {"id":{"name":"oGrass","path":"objects/oGrass/oGrass.yy",},},
+    {"id":{"name":"oLightMoving","path":"objects/oLightMoving/oLightMoving.yy",},},
     {"id":{"name":"oLights","path":"objects/oLights/oLights.yy",},},
     {"id":{"name":"oLightSetup","path":"objects/oLightSetup/oLightSetup.yy",},},
     {"id":{"name":"oManager","path":"objects/oManager/oManager.yy",},},

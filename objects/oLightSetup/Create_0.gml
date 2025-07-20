@@ -1,4 +1,5 @@
-surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H);
+//Resize the application surface to be lower res (for pixel games + performance boost)
+surface_resize(application_surface,640,360);
 display_set_gui_maximize();
 
 //turn of automaic drawing of application surface
@@ -51,7 +52,7 @@ global.vy = 0;
 
 function Nbegin(){
 	if (!surface_exists(global.n_surf)){
-		global.n_surf = surface_create(320,180);
+		global.n_surf = surface_create(640,360);
 	}
 	surface_set_target(global.n_surf);
 	matrix_set(matrix_world,matrix_build(-global.vx,-global.vy,0,0,0,0,1,1,1));

@@ -12,7 +12,7 @@ var _u_nmap = u_nmap;
 
 //Shadow surface setup
 if (!surface_exists(shad_surf)){
-	shad_surf = surface_create(RESOLUTION_W,RESOLUTION_H);
+	shad_surf = surface_create(640,360);
 }
 
 
@@ -21,9 +21,6 @@ matrix_set(matrix_world,matrix_build(-vx,-vy,0,0,0,0,1,1,1));
 //Draw Normal (EDIT: this should be below the matrix set)
 surface_set_target(global.n_surf);
 shader_set(shNorm);
-with(pEntity){
-	draw_self();	
-}
 shader_reset();
 surface_reset_target();
 

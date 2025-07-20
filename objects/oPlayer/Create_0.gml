@@ -34,7 +34,7 @@ timerDust	=	5;
 
 hascontrol	=	true;
 
-invincible	=	120;
+invincible	=	0;
 flashAlpha	=	0;
 flashColor	=	0;
 
@@ -54,4 +54,4 @@ kActivate	=	keyboard_check_pressed(vk_space);
 
 inputDir	=	point_direction(0,0,kRight-kLeft,0);
 inputMag	=	(kRight - kLeft) != 0;
-onGround	=	place_meeting(x ,y + 1, oCol)
+onGround	=	place_meeting(x ,y + 1, oCol);
