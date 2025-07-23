@@ -31,14 +31,3 @@ vx += (keyboard_check(vk_right)-keyboard_check(vk_left))*4;
 camera_set_view_pos(view_camera[0],vx,vy);
 global.vx = vx;
 global.vy = vy;
-
-
-
-//add lights by left clicking. For testing purposes
-if (mouse_check_button_pressed(mb_left)){
-		instance_create_depth(mouse_x,mouse_y,depth,oLights);	
-}
-if (mouse_check_button_pressed(mb_right)){
-	repeat(100)
-		instance_create_depth(mouse_x,mouse_y,depth,oLights);	
-}

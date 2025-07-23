@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sEnemyDrone_Die",
   "bboxMode":0,
   "bbox_bottom":33,
@@ -12,12 +12,12 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"31cbcb76-a373-4f12-ae6d-ba0bbe4b8d53","name":"31cbcb76-a373-4f12-ae6d-ba0bbe4b8d53","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"12477ff0-dc1a-4ee3-ae4f-c8650cc466a0","name":"12477ff0-dc1a-4ee3-ae4f-c8650cc466a0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"1e128435-b52e-492d-90dd-155152b7e8c5","name":"1e128435-b52e-492d-90dd-155152b7e8c5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"79a6ab7f-65da-49df-a4f7-f5629d2d8754","name":"79a6ab7f-65da-49df-a4f7-f5629d2d8754","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"76a32cb6-af5a-45e8-b303-a6ec3da2e50b","name":"76a32cb6-af5a-45e8-b303-a6ec3da2e50b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"02bad442-004e-46d8-b05f-db463525b82f","name":"02bad442-004e-46d8-b05f-db463525b82f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"31cbcb76-a373-4f12-ae6d-ba0bbe4b8d53","name":"31cbcb76-a373-4f12-ae6d-ba0bbe4b8d53","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"12477ff0-dc1a-4ee3-ae4f-c8650cc466a0","name":"12477ff0-dc1a-4ee3-ae4f-c8650cc466a0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1e128435-b52e-492d-90dd-155152b7e8c5","name":"1e128435-b52e-492d-90dd-155152b7e8c5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"79a6ab7f-65da-49df-a4f7-f5629d2d8754","name":"79a6ab7f-65da-49df-a4f7-f5629d2d8754","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"76a32cb6-af5a-45e8-b303-a6ec3da2e50b","name":"76a32cb6-af5a-45e8-b303-a6ec3da2e50b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"02bad442-004e-46d8-b05f-db463525b82f","name":"02bad442-004e-46d8-b05f-db463525b82f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -75,24 +75,12 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"31cbcb76-a373-4f12-ae6d-ba0bbe4b8d53","path":"sprites/sEnemyDrone_Die/sEnemyDrone_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"87b4a912-4dcf-4428-8fc3-4f087c9966d6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"12477ff0-dc1a-4ee3-ae4f-c8650cc466a0","path":"sprites/sEnemyDrone_Die/sEnemyDrone_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5b96f689-cae9-4222-b8f5-2e2206f70e1f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1e128435-b52e-492d-90dd-155152b7e8c5","path":"sprites/sEnemyDrone_Die/sEnemyDrone_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"983aaee7-4816-4ed8-b0ba-fa2add479fe2","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"79a6ab7f-65da-49df-a4f7-f5629d2d8754","path":"sprites/sEnemyDrone_Die/sEnemyDrone_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"32d9c339-661a-4969-afd8-25090dd6c85e","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"76a32cb6-af5a-45e8-b303-a6ec3da2e50b","path":"sprites/sEnemyDrone_Die/sEnemyDrone_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d3de8ae7-0095-415d-aa29-38ccd4af1dc4","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"02bad442-004e-46d8-b05f-db463525b82f","path":"sprites/sEnemyDrone_Die/sEnemyDrone_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ce201a73-9d75-4cde-bebf-911ea98e6a1a","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"31cbcb76-a373-4f12-ae6d-ba0bbe4b8d53","path":"sprites/sEnemyDrone_Die/sEnemyDrone_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"87b4a912-4dcf-4428-8fc3-4f087c9966d6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"12477ff0-dc1a-4ee3-ae4f-c8650cc466a0","path":"sprites/sEnemyDrone_Die/sEnemyDrone_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5b96f689-cae9-4222-b8f5-2e2206f70e1f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"1e128435-b52e-492d-90dd-155152b7e8c5","path":"sprites/sEnemyDrone_Die/sEnemyDrone_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"983aaee7-4816-4ed8-b0ba-fa2add479fe2","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"79a6ab7f-65da-49df-a4f7-f5629d2d8754","path":"sprites/sEnemyDrone_Die/sEnemyDrone_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"32d9c339-661a-4969-afd8-25090dd6c85e","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"76a32cb6-af5a-45e8-b303-a6ec3da2e50b","path":"sprites/sEnemyDrone_Die/sEnemyDrone_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"d3de8ae7-0095-415d-aa29-38ccd4af1dc4","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"02bad442-004e-46d8-b05f-db463525b82f","path":"sprites/sEnemyDrone_Die/sEnemyDrone_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ce201a73-9d75-4cde-bebf-911ea98e6a1a","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -24,7 +24,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"spriteGrass","filters":[],"listItems":[],"multiselect":false,"name":"spriteGrass","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sGrass_1","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"spriteGrass","filters":[],"listItems":[],"multiselect":false,"name":"spriteGrass","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sGrass_1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

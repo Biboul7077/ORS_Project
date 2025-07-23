@@ -1,5 +1,5 @@
 {
-  "$GMNotes":"",
+  "$GMNotes":"v1",
   "%Name":"nt_PixelEquivalence",
   "name":"nt_PixelEquivalence",
   "parent":{

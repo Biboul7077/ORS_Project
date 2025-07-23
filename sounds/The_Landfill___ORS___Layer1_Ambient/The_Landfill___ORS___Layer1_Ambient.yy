@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"The_Landfill___ORS___Layer1_Ambient",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":18.0,
+  "exportDir":"",
   "name":"The_Landfill___ORS___Layer1_Ambient",
   "parent":{
     "name":"The_Landfill__ORS",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"The_Landfill___ORS___Layer1_Ambient.ogg",
-  "type":0,
   "volume":1.0,
 }
