@@ -1,6 +1,6 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"TileSet_Wall_Landfill",
+  "%Name":"TileSet_Wall_Landfill_Back",
   "autoTileSets":[
     {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
         5,0,3,0,11,0,0,0,8,0,0,0,0,0,0,0,4,0,0,0,2,0,0,0,7,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -11,7 +11,7 @@
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"TileSet_Wall_Landfill",
+  "name":"TileSet_Wall_Landfill_Back",
   "out_columns":5,
   "out_tilehborder":2,
   "out_tilevborder":2,
@@ -22,8 +22,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sTileset_Back",
-    "path":"sprites/sTileset_Back/sTileset_Back.yy",
+    "name":"sTileset",
+    "path":"sprites/sTileset/sTileset.yy",
   },
   "spriteNoExport":true,
   "textureGroupId":{

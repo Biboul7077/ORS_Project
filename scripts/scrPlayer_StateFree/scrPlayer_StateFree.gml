@@ -1,69 +1,98 @@
-function Player_StateFree(){
-	hsp = lengthdir_x(inputMag * spdWalk, inputDir)
-	vsp = vsp + grv;
+function Approach(val, target, step) {
+	return (val < target) ? min(val + step, target) : max(val - step, target);
+}
 
-	if onGround or inWater
-	{
+function Player_StateFree() {
+
+	// === INPUTS ===
+	inputMag = (kLeft || kRight);
+	inputDir = kRight - kLeft;
+
+	// === COYOTE TIME ===
+	if (onGround || inWater) {
+		coyoteTimer = coyoteTimeMax;
 		jumpCount = 0;
 	} else {
-		if jumpCount = 0 jumpCount = 1;
+		coyoteTimer--;
+		if (jumpCount == 0) jumpCount = 1;
 	}
 
-	if kJump && jumpCount < jumpMax
-	{
+	// === JUMP BUFFER ===
+	if (kJump) {
+		jumpBuffer = jumpBufferMax;
+	} else {
+		jumpBuffer--;
+	}
+
+	// === SAUT ===
+	if (jumpBuffer > 0 && (coyoteTimer > 0 || jumpCount < jumpMax)) {
+		vsp = jumpSpd;
 		jumpCount++;
 		jumpTimer = jumpHoldFrames;
+		jumpBuffer = 0;
 	}
 
-	if !kHoldJump jumpTimer = 0;
-
-	if jumpTimer > 0
-	{
-		vsp = jumpSpd;
+	if (jumpTimer > 0 && kHoldJump) {
 		jumpTimer--;
-	}
-	
-	if inWater
-	{
-		vsp /= 3;
-		grv = grvWater;
 	} else {
-		grv = grvGround;
+		if (vsp < 0 && !kHoldJump) {
+			vsp += grv * lowJumpMult;
+		} else if (vsp > 0) {
+			vsp += grv * fallMult;
+		} else {
+			vsp += grv;
+		}
 	}
-	
+
+	// === GRAVITÉ SPÉCIFIQUE EAU / SOL ===
+	grv = inWater ? grvWater : grvGround;
+
+	// === DÉPLACEMENT HORIZONTAL AVEC ACCÉLÉRATION ===
+	var acc = onGround ? accGround : accAir;
+	var dec = onGround ? decGround : decAir;
+
+	if (inputMag != 0) {
+		hsp = Approach(hsp, inputDir * spdMax, acc);
+	} else {
+		hsp = Approach(hsp, 0, dec);
+	}
+
+	// === COLLISIONS ===
 	Player_Collision();
-	
-	if kDown && onGround
-	{
+
+	// === ANIMATION ===
+	if (inputMag != 0) {
+		image_xscale = inputDir;
+		sprite_index = spriteRun;
+	} else {
+		sprite_index = spriteIdle;
+	}
+
+	// === TRANSITION ROULADE ===
+	if (kDown && onGround) {
 		state = Player_StateRoll;
 		moveDistRemain = distRoll;
 	}
-	
-	if kActivate
-	{
-		var	_activateX = lengthdir_x(10, inputDir);
-		var	_activateY = lengthdir_y(10, inputDir);
-		activate = instance_position(x + _activateX, y + _activateY, pEntity)
-		
-		if activate != noone && activate.entityActivateArgs != 1
-		{
+
+	// === ACTIVATION ===
+	if (kActivate) {
+		var _activateX = lengthdir_x(10, inputDir);
+		var _activateY = lengthdir_y(10, inputDir);
+		var activate = instance_position(x + _activateX, y + _activateY, pEntity);
+
+		if (activate != noone && activate.entityActivateArgs != 1) {
 			ExecuteArray(activate.entityActivateScript, activate.entityActivateArgs);
-			
-			if activate.entityNPC
-			{				
-				with activate
-				{
-					direction = point_direction(x,y,other.x,other.y);
+
+			if (activate.entityNPC) {
+				with (activate) {
+					direction = point_direction(x, y, other.x, other.y);
 				}
 			}
+			
+			state = Player_StateLocked;
 		}
 	}
-	
-	if inputMag != 0
-	{
-		image_xscale = kRight - kLeft;
-		sprite_index = spriteRun;
-	} else sprite_index = spriteIdle;
-	
-	Player_Shoot()
+
+	// === ATTAQUE ===
+	Player_Shoot();
 }

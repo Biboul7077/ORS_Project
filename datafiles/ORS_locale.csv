@@ -1,4 +1,3 @@
 ,EN,FR,DE
-trad_test,"Hello... Hello there ? Do you hear me ?","Salut... Salut à tous ? Vous m'entendez ?","Hallo... Wie geht's denn so ? hören Sie mich ?"
-answerA,"Hello ? Hello ???","Bonjour ? Vous, vous m'entendez ???","Hallo ? Hallo ???"
-answerB,"General Kenobi","General Kenobi","General Kenobi"
+call_S,"Hello... Hello there ? Do you hear me ?","Salut... Salut à tous ? Vous m'entendez ?","Hallo... Wie geht's denn so ? hören Sie mich ?"
+ans_S,"Whatever, I can't hear you","Peu importe... Je ne peux pas vous entendre","Was auch immer, ich kann Sich nicht hören"

@@ -34,5 +34,8 @@ global.coin		= 0;
 global.dmg		= 5;
 global.hp		= 4;
 
+/// FONT
+global.fntTextboxes = font_add("President Evil.ttf", 12, false, false, 32, 128);
+
 randomize();
 room_goto(ROOM_START);

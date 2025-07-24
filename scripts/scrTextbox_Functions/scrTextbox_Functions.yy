@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scrNewTextbox",
+  "%Name":"scrTextbox_Functions",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scrNewTextbox",
+  "name":"scrTextbox_Functions",
   "parent":{
     "name":"Textbox Script",
     "path":"folders/Scripts/Textbox Script.yy",

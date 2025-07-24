@@ -8,9 +8,6 @@ kHoldJump	=	keyboard_check(ord("Z"));
 kDash		=	keyboard_check_pressed(vk_shift);
 kActivate	=	keyboard_check_pressed(vk_space);
 
-inputDir	=	point_direction(0,0,kRight-kLeft,0);
-inputMag	=	(kRight - kLeft) != 0;
-
 //Movement
 onGround = place_meeting(x ,y + 1, oCol);
 inWater = collision_point(x,y,oWater,true,false);

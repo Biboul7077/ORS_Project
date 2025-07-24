@@ -2,22 +2,42 @@
 image_speed	=	0;
 hsp			=	0;
 vsp			=	0;
-	grvGround	= 0.4;
-	grvWater	= 0.6;
-grv = grvGround;
-spdWalk		=	3.0;
+grv			=	0;
+
+// Déplacement horizontal
+spdMax = 4.5;
+accGround = 1.0;
+decGround = 1.2;
+accAir = 0.4;
+decAir = 0.5;
+
+// Gravité / saut
+grvGround = 0.5;
+grvWater = 0.2; // si utile
+jumpSpd = -5.5;
+jumpCount = 0;
+jumpHoldFrames = 5;
+jumpMax = 1;
+
+// Suspension au sommet
+fallMult = 1.2;
+lowJumpMult = 2.0;
+jumpTimer = 0;
+
+// Coyote time et jump buffer (optionnel mais conseillé)
+coyoteTimeMax = 6;
+coyoteTimer = 0;
+jumpBufferMax = 6;
+jumpBuffer = 0;
+
+// Direction de mouvement
+inputMag = 0;
+inputDir = 0;
 
 //Set State Roll
 spdRoll		=	5.0;
 distRoll	=	96;
 moveDistRemain	=	0;
-
-//Set Jump
-jumpSpd		=	-4.0;
-jumpMax		=	1;
-jumpCount	=	0;
-jumpHoldFrames	=	17;
-jumpTimer	=	0;
 
 //Set State Bonk
 bonkDist	=	96;

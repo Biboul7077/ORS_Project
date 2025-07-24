@@ -1,27 +1,26 @@
-messages = ds_list_create();
-messageID = 0;
+/// TEXTBOX VARIABLES
+textbox_sprite = sTextbox;
+textbox_img = 0;
+textbox_img_spd = 0;
 
-messageText = "";
-messageChar = 0;
-messageSpd = 0.3;
+textbox_spr_w = sprite_get_width(textbox_sprite);
 
-enum MSG {
-	TEXT,
-	NAME,
-	IMAGE,
-	SUBIMAGE,
-}
+textbox_w = 16;
+textbox_h = 2;
+border = 8;
+line_sep = 12;
+line_width = (textbox_w * textbox_spr_w) - border * 2;
 
-var _guiW = display_get_gui_width();
-var _guiH = display_get_gui_height();
+/// TEXT
+pages = 0;
+text[0] = "";
+text_length[0] = string_length(text[0]);
+draw_char = 0;
 
-height = floor(_guiH * 0.35);
-width = _guiW;
+/// OPTIONS
+option[0] = -1;
+option_link_id[0] = -1;
+option_pos = 0;
+option_number = 0;
 
-x = 0
-y = _guiH - height;
-
-firstPadding = 24;
-padding = 16
-
-Fnt_Name = font_add("President Evil.ttf", 32, false, false, 32, 128);
+setup = false;
