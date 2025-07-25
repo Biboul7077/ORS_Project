@@ -1,5 +1,14 @@
+function SetDefaultText()
+{
+	line_break_pos[0, pageNumber] = 999;
+	line_break_num[pageNumber] = 0;
+	line_break_offset[pageNumber] = 0;
+}
+
 function TextSetup(_text)
 {
+	SetDefaultText();
+	
 	text[pageNumber] = Text(_text);
 	
 	pageNumber++;

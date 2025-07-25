@@ -1,3 +1,4 @@
 ,EN,FR,DE
 call_S,"Hello... Hello there ? Do you hear me ?","Salut... Salut à tous ? Vous m'entendez ?","Hallo... Wie geht's denn so ? hören Sie mich ?"
-ans_S,"Whatever, I can't hear you","Peu importe... Je ne peux pas vous entendre","Was auch immer, ich kann Sich nicht hören"
+positive_ans_S,"I'm happy to hear this ! But, whatever, I can't hear you","Ravi que le contact soit effectué. Mais peu importe... Je ne peux pas vous entendre","Schön, dass der Kontakt hergestellt ist. Aber egal, ich kann Sie nicht hören"
+negative_ans_S,"Erh... Whatever, I can't hear you","Peu importe... Je ne peux pas vous entendre","Egal... Ich kann Sie nicht hören"

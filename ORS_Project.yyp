@@ -183,6 +183,7 @@
     {"id":{"name":"sPoint_SoundSource","path":"sprites/sPoint_SoundSource/sPoint_SoundSource.yy",},},
     {"id":{"name":"sPost_Bg","path":"sprites/sPost_Bg/sPost_Bg.yy",},},
     {"id":{"name":"sRifle","path":"sprites/sRifle/sRifle.yy",},},
+    {"id":{"name":"sSelectOption","path":"sprites/sSelectOption/sSelectOption.yy",},},
     {"id":{"name":"sShoot_Animation","path":"sprites/sShoot_Animation/sShoot_Animation.yy",},},
     {"id":{"name":"sShootVanish","path":"sprites/sShootVanish/sShootVanish.yy",},},
     {"id":{"name":"sSign","path":"sprites/sSign/sSign.yy",},},

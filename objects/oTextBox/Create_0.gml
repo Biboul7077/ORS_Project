@@ -12,9 +12,13 @@ line_sep = 12;
 line_width = (textbox_w * textbox_spr_w) - border * 2;
 
 /// TEXT
-pages = 0;
+page = 0;
 text[0] = "";
 text_length[0] = string_length(text[0]);
+
+char[0, 0] = "";
+char_x[0, 0] = 0;
+char_y[0, 0] = 0;
 draw_char = 0;
 
 /// OPTIONS
@@ -24,3 +28,7 @@ option_pos = 0;
 option_number = 0;
 
 setup = false;
+
+/// EFFECTS
+SetDefaultText();
+last_free_space = 0;

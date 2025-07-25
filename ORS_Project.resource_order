@@ -129,6 +129,7 @@
     {"name":"sPoint_SoundSource","order":1,"path":"sprites/sPoint_SoundSource/sPoint_SoundSource.yy",},
     {"name":"sPost_Bg","order":4,"path":"sprites/sPost_Bg/sPost_Bg.yy",},
     {"name":"sRifle","order":1,"path":"sprites/sRifle/sRifle.yy",},
+    {"name":"sSelectOption","order":9,"path":"sprites/sSelectOption/sSelectOption.yy",},
     {"name":"sShoot_Animation","order":6,"path":"sprites/sShoot_Animation/sShoot_Animation.yy",},
     {"name":"sShootVanish","order":8,"path":"sprites/sShootVanish/sShootVanish.yy",},
     {"name":"sSmoke","order":2,"path":"sprites/sSmoke/sSmoke.yy",},
