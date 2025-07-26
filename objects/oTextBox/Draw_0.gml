@@ -50,12 +50,12 @@ if setup == false
 			
 			for (var lineBreak = 0; lineBreak < line_break_num[p]; lineBreak++)
 			{
-				if _charPos < line_break_pos[lineBreak, p]
+				if _charPos >= line_break_pos[lineBreak, p]
 				{
 					var _str_copy = string_copy(text[p], line_break_pos[lineBreak, p], _charPos - line_break_pos[lineBreak, p]);
 					_currentTextWidth = string_width(_str_copy);
 				
-					_textLine = lineBreak - 1;
+					_textLine = lineBreak + 1;
 				}
 			}
 			

@@ -25,7 +25,7 @@ lowJumpMult = 2.0;
 jumpTimer = 0;
 
 // Coyote time et jump buffer (optionnel mais conseillé)
-coyoteTimeMax = 6;
+coyoteTimeMax = 4;
 coyoteTimer = 0;
 jumpBufferMax = 6;
 jumpBuffer = 0;
