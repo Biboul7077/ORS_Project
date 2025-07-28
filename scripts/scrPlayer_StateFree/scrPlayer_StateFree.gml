@@ -5,6 +5,7 @@ function Approach(val, target, step) {
 function Player_StateFree() {
 
 	// === INPUTS ===
+	//TODO : The system isn't able to handle kRight and kLeft at the same time. When so, the player object fall through the walls.
 	inputMag = (kLeft || kRight);
 	inputDir = kRight - kLeft;
 

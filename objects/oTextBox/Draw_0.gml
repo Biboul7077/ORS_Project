@@ -1,7 +1,7 @@
 var accept_key = keyboard_check_pressed(vk_space);
 
 var textbox_x = camera_get_view_x(view_camera[0]);
-var textbox_y = camera_get_view_y(view_camera[0]) + 288;
+var textbox_y = camera_get_view_y(view_camera[0]) + 256;
 
 /// SETUP
 if setup == false
@@ -14,6 +14,8 @@ if setup == false
 	for (var p = 0; p < pageNumber; p++)
 	{
 		text_length[p] = string_length(text[p]);
+		
+		portrait_x_offset[p] = -96;
 		text_x_offset[p] = 128;
 		
 		for (var c = 0; c < text_length[p]; c++)
@@ -65,10 +67,29 @@ if setup == false
 	}
 }
 
-if draw_char < text_length[page]
+if text_pause_timer <= 0
 {
-	draw_char += global.textSpd;
-	draw_char = clamp(draw_char, 0, text_length[page])
+	if draw_char < text_length[page]
+	{
+		draw_char += global.textSpd;
+		draw_char = clamp(draw_char, 0, text_length[page])
+		var _checkChar = string_char_at(text[page], draw_char);
+		if _checkChar == "." || _checkChar == "?" || _checkChar == "!"
+		{
+			text_pause_timer = text_pause_time;
+			if !audio_play_sound(speaker_audio[page], 0, false) audio_play_sound(speaker_audio[page], 0, false);
+		} else {
+			if snd_count < snd_delay
+			{
+				snd_count++;
+			} else {
+				snd_count = 0;
+				audio_play_sound(speaker_audio[page], 0, false);
+			}
+		}
+	}
+} else {
+	text_pause_timer--;
 }
 
 if accept_key
@@ -101,8 +122,13 @@ if accept_key
 
 textbox_img += textbox_img_spd;
 
+if speaker_sprite[page] != noone
+{
+	draw_sprite(speaker_sprite[page], speaker_image[page], portrait_x_offset[page], 64)
+}
+
 draw_sprite_ext(
-	textbox_sprite,
+	textbox_sprite[page],
 	textbox_img,
 	textbox_x + text_x_offset[page],
 	textbox_y,
@@ -127,17 +153,43 @@ if draw_char == text_length[page] && page == pageNumber - 1
 	{
 		var _opSide = (sprite_get_width(sPlayer_Reaction) + _opBorder*2)/textbox_spr_w;
 		var _opSpaces = _opSpace*option_number - _opSpace*op;
-		draw_sprite_ext(textbox_sprite, textbox_img, _opX - _opSpaces, _opY, _opSide, _opSide, 0, c_white, 1);
+		draw_sprite_ext(textbox_sprite[page], textbox_img, _opX - _opSpaces, _opY, _opSide, _opSide, 0, c_white, 1);
 		draw_sprite(sPlayer_Reaction, option[op], _opX - _opSpaces + _opBorder, _opY + _opBorder);
 		
 		if option_pos == op
 		{
-			draw_sprite(sSelectOption, 0, _opX - _opSpaces + _opBorder, _opY + _opBorder);
+			draw_sprite(sSelectOption, 0, _opX - _opSpaces, _opY);
 		}
 	}
 }
 
 for (var c = 0; c < draw_char; c++)
 {
-	draw_text(char_x[c, page], char_y[c, page], char[c, page]);
+	var float_y = 0;
+	if float_text[c, page] == true
+	{
+		float_dir[c, page] += -6;
+		float_y = dsin(float_dir[c, page]) * 3;
+	}
+	
+	var shake_x = 0;
+	var shake_y = 0;
+	if shake_text[c, page] == true
+	{
+		shake_timer[c, page]--;
+		if shake_timer[c, page] <= 0
+		{
+			shake_timer[c, page] = irandom_range(4, 8);
+			shake_dir[c, page] = irandom(360);
+		}
+		if shake_timer[c, page] <= 2
+		{
+			shake_x = lengthdir_x(1, shake_dir[c, page]);
+			shake_y = lengthdir_y(1, shake_dir[c, page]);
+		}
+	}
+	
+	var chr_x = char_x[c, page] + shake_x;
+	var chr_y = char_y[c, page] + float_y + shake_y;
+	draw_text_color(chr_x, chr_y, char[c, page], col1[c, page], col2[c, page], col3[c, page], col4[c, page], 1);
 }

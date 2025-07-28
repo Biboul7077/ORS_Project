@@ -1,12 +1,12 @@
 /// TEXTBOX VARIABLES
-textbox_sprite = sTextbox;
+textbox_sprite[0] = sTextbox;
 textbox_img = 0;
 textbox_img_spd = 0;
 
-textbox_spr_w = sprite_get_width(textbox_sprite);
+textbox_spr_w = sprite_get_width(textbox_sprite[0]);
 
 textbox_w = 16;
-textbox_h = 2;
+textbox_h = 3;
 border = 8;
 line_sep = 12;
 line_width = (textbox_w * textbox_spr_w) - border * 2;
@@ -21,6 +21,10 @@ char_x[0, 0] = 0;
 char_y[0, 0] = 0;
 draw_char = 0;
 
+///SOUND
+snd_delay = 4;
+snd_count = snd_delay;
+
 /// OPTIONS
 option[0] = -1;
 option_link_id[0] = -1;
@@ -32,3 +36,5 @@ setup = false;
 /// EFFECTS
 SetDefaultText();
 last_free_space = 0;
+text_pause_timer = 0;
+text_pause_time = 16;
