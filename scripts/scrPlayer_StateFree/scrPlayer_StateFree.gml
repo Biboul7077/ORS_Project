@@ -25,6 +25,11 @@ function Player_StateFree() {
 		jumpBuffer--;
 	}
 
+	// === GRAVITÉ SPÉCIFIQUE EAU / SOL ===
+	grv = inWater ? WATER_GRAVITY : AIR_GRAVITY;
+	show_debug_message(inWater);
+	show_debug_message(grv);
+	
 	// === SAUT ===
 	if (jumpBuffer > 0 && (coyoteTimer > 0 || jumpCount < jumpMax)) {
 		vsp = jumpSpd;
@@ -44,9 +49,6 @@ function Player_StateFree() {
 			vsp += grv;
 		}
 	}
-
-	// === GRAVITÉ SPÉCIFIQUE EAU / SOL ===
-	grv = inWater ? grvWater : grvGround;
 
 	// === DÉPLACEMENT HORIZONTAL AVEC ACCÉLÉRATION ===
 	var acc = onGround ? accGround : accAir;

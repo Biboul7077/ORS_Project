@@ -9,8 +9,8 @@ kDash		=	keyboard_check_pressed(vk_shift);
 kActivate	=	keyboard_check_pressed(vk_space);
 
 //Movement
-onGround = place_meeting(x ,y + 1, oCol);
-inWater = collision_point(x,y,oWater,true,false);
+onGround	= place_meeting(x ,y + 1, oCol);
+inWater		= place_meeting(x, y, oWater);
 if !global.gamePaused
 {
 	script_execute(state);

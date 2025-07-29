@@ -12,9 +12,7 @@ accAir = 0.4;
 decAir = 0.5;
 
 // Gravité / saut
-grvGround = 0.5;
-grvWater = 0.2; // si utile
-jumpSpd = -5.5;
+jumpSpd = -6.5;
 jumpCount = 0;
 jumpHoldFrames = 5;
 jumpMax = 1;
@@ -75,3 +73,4 @@ kActivate	=	keyboard_check_pressed(vk_space);
 inputDir	=	point_direction(0,0,kRight-kLeft,0);
 inputMag	=	(kRight - kLeft) != 0;
 onGround	=	place_meeting(x ,y + 1, oCol);
+inWater		=	false;

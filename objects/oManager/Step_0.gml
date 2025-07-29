@@ -10,4 +10,9 @@ cursor_sprite = sTarget;
 window_set_cursor(cr_none);
 
 global.hp += 0.0005;
-global.hp = clamp(global.hp, 0, 6);
+global.hp = min(global.hp, 6);
+
+if global.hp <= 0.01
+{
+	game_restart();
+}
