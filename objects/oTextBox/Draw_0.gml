@@ -153,7 +153,7 @@ if draw_char == text_length[page] && page == pageNumber - 1
 	{
 		var _opSide = (sprite_get_width(sPlayer_Reaction) + _opBorder*2)/textbox_spr_w;
 		var _opSpaces = _opSpace*option_number - _opSpace*op;
-		draw_sprite_ext(textbox_sprite[page], textbox_img, _opX - _opSpaces, _opY, _opSide, _opSide, 0, c_white, 1);
+		draw_sprite_ext(sOptionBox, textbox_img, _opX - _opSpaces, _opY, _opSide, _opSide, 0, c_white, 1);
 		draw_sprite(sPlayer_Reaction, option[op], _opX - _opSpaces + _opBorder, _opY + _opBorder);
 		
 		if option_pos == op
@@ -186,6 +186,16 @@ for (var c = 0; c < draw_char; c++)
 		{
 			shake_x = lengthdir_x(1, shake_dir[c, page]);
 			shake_y = lengthdir_y(1, shake_dir[c, page]);
+		}
+	}
+	
+	if censored_text[c, page] == true
+	{
+		censored_timer[c, page]--;
+		if censored_timer[c, page] <= 0
+		{
+			censored_timer[c, page] = irandom_range(4, 8);
+			char[c, page] = chr(irandom_range(32, 127));
 		}
 	}
 	

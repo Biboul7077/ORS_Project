@@ -5,9 +5,13 @@ function Approach(val, target, step) {
 function Player_StateFree() {
 
 	// === INPUTS ===
-	//TODO : The system isn't able to handle kRight and kLeft at the same time. When so, the player object fall through the walls.
-	inputMag = (kLeft || kRight);
-	inputDir = kRight - kLeft;
+	if (kLeft && kRight) {
+		inputMag = 0;
+		inputDir = 0;
+	} else {
+		inputMag = (kLeft || kRight);
+		inputDir = kRight - kLeft;
+	}
 
 	// === COYOTE TIME ===
 	if (onGround || inWater) {
@@ -27,8 +31,6 @@ function Player_StateFree() {
 
 	// === GRAVITÉ SPÉCIFIQUE EAU / SOL ===
 	grv = inWater ? WATER_GRAVITY : AIR_GRAVITY;
-	show_debug_message(inWater);
-	show_debug_message(grv);
 	
 	// === SAUT ===
 	if (jumpBuffer > 0 && (coyoteTimer > 0 || jumpCount < jumpMax)) {

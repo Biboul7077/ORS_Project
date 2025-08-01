@@ -26,10 +26,11 @@ if inputMag != 0 && onGround && xprevious != x
 
 if timerDust <= 0
 {
-	timerDust = 5;
+	timerDust = inWater ? 20 : 5;
+	var _spriteDust = inWater ? sBubbles : sDust;
 	repeat(irandom_range(1,3)) {
 		with instance_create_depth(x - (image_xscale * 10), y + 12, depth + 1, oParticles) {
-			sprite_index	=	sDust
+			sprite_index	=	_spriteDust
 			image_angle		=	random(360)
 			fric			=	0.8;
 			motion_add(random_range(70,-70), -other.image_xscale * random_range(4, 9));

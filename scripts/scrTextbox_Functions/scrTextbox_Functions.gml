@@ -17,6 +17,9 @@ function SetDefaultText()
 		shake_text[c, pageNumber] = false;
 		shake_dir[c, pageNumber] = irandom(360);
 		shake_timer[c, pageNumber] = irandom(4);
+		
+		censored_text[c, pageNumber] = false;
+		censored_timer[c, pageNumber] = irandom(4);
 	}
 	
 	textbox_sprite[pageNumber] = sTextbox;
@@ -48,6 +51,14 @@ function SetShakeText(_start, _end)
 	for (var c= _start; c < _end; c++)
 	{
 		shake_text[c, pageNumber - 1] = true;
+	}
+}
+
+function SetCensoredText(_start, _end)
+{
+	for (var c= _start; c < _end; c++)
+	{
+		censored_text[c, pageNumber - 1] = true;
 	}
 }
 
