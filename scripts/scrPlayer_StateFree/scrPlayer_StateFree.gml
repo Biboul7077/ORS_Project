@@ -7,7 +7,6 @@ function Player_StateFree() {
 	// === INPUTS ===
 	if (kLeft && kRight) {
 		inputMag = 0;
-		inputDir = 0;
 	} else {
 		inputMag = (kLeft || kRight);
 		inputDir = kRight - kLeft;
@@ -85,7 +84,7 @@ function Player_StateFree() {
 		var _activateY = lengthdir_y(10, inputDir);
 		var activate = instance_position(x + _activateX, y + _activateY, pEntity);
 
-		if (activate != noone && activate.entityActivateArgs != 1) {
+		if (activate != noone && activate.entityActivateScript != -1 && activate.entityActivateArgs != -1) {
 			ExecuteArray(activate.entityActivateScript, activate.entityActivateArgs);
 
 			if (activate.entityNPC) {

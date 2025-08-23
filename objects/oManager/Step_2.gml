@@ -1,4 +1,4 @@
-if keyboard_check_pressed(vk_escape)
+if keyboard_check_pressed(vk_escape) && !instance_exists(oTransition) && !instance_exists(oTextbox)
 {
 	global.gamePaused = !global.gamePaused;
 	

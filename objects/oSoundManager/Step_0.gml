@@ -1,0 +1,1 @@
+audio_listener_position(oPlayer.x, oPlayer.y, 0);

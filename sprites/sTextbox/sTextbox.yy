@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"UI_UX",
-    "path":"folders/Sprites/Asset/UI_UX.yy",
+    "name":"GUI & HUD",
+    "path":"folders/Sprites/Asset/GUI & HUD.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

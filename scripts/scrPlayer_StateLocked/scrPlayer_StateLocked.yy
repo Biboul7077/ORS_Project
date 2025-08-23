@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scrPlayer_StateLocked",
   "parent":{
-    "name":"Player Script",
-    "path":"folders/Scripts/Player Script.yy",
+    "name":"State Machine",
+    "path":"folders/Scripts/Player Script/State Machine.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

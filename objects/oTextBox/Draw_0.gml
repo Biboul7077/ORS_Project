@@ -77,14 +77,14 @@ if text_pause_timer <= 0
 		if _checkChar == "." || _checkChar == "?" || _checkChar == "!"
 		{
 			text_pause_timer = text_pause_time;
-			if !audio_play_sound(speaker_audio[page], 0, false) audio_play_sound(speaker_audio[page], 0, false);
+			if !audio_play_sound(speaker_audio[page], SOUND_PRIORITY.FX, false) audio_play_sound(speaker_audio[page], SOUND_PRIORITY.FX, false);
 		} else {
 			if snd_count < snd_delay
 			{
 				snd_count++;
 			} else {
 				snd_count = 0;
-				audio_play_sound(speaker_audio[page], 0, false);
+				audio_play_sound(speaker_audio[page], SOUND_PRIORITY.FX, false);
 			}
 		}
 	}

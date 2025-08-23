@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":18.0,
+  "duration":17.993515,
   "exportDir":"",
   "name":"The_Landfill___ORS___Layer4_Fight",
   "parent":{

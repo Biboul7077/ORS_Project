@@ -19,7 +19,7 @@ function HurtPlayer(_force,_damage)
 		}
 		else
 		{
-			//kill the player
+			game_restart();
 		}
 	}
 }

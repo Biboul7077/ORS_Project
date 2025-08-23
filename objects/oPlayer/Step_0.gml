@@ -37,3 +37,8 @@ if timerDust <= 0
 		}
 	}
 }
+
+///HP MANAGEMENT
+var _dHP = inWater ? 0.05 : 0.0005;
+global.hp += _dHP;
+global.hp = min(global.hp, 6);

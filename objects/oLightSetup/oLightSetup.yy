@@ -12,8 +12,8 @@
   "name":"oLightSetup",
   "overriddenProperties":[],
   "parent":{
-    "name":"Management",
-    "path":"folders/Objets/Management.yy",
+    "name":"InGame Management",
+    "path":"folders/Objets/Management/InGame Management.yy",
   },
   "parentObjectId":null,
   "persistent":false,

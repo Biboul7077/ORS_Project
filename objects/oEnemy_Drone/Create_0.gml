@@ -12,7 +12,8 @@ sprHurt		= sEnemyDrone_Hurt;
 //Enemy Scripts
 enemyScripts[ENEMYSTATE.WANDER]	= DroneWander;
 enemyScripts[ENEMYSTATE.CHASE]	= DroneChase;
+enemyScripts[ENEMYSTATE.ATTACK]	= DroneAttack;
 enemyScripts[ENEMYSTATE.HURT]	= DroneHurt;
 enemyScripts[ENEMYSTATE.DIE]	= DroneDie;
 
-timer = irandom(20);
+timer = 0;

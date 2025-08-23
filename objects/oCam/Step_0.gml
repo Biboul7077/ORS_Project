@@ -6,8 +6,8 @@ if instance_exists(follow) {
 }
 
 //Update Object Position
-x += (xTo - x) / 16;
-y += (yTo - y) / 16;
+x += (xTo - x) / 15;
+y += (yTo - y) / 15;
 
 //Keep camera centered inside the room
 x = clamp(x, view_w_half, room_width - view_w_half);

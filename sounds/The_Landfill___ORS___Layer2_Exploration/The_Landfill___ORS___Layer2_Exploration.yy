@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":66.0,
+  "duration":65.993515,
   "exportDir":"",
   "name":"The_Landfill___ORS___Layer2_Exploration",
   "parent":{

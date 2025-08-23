@@ -74,3 +74,11 @@ inputDir	=	point_direction(0,0,kRight-kLeft,0);
 inputMag	=	(kRight - kLeft) != 0;
 onGround	=	place_meeting(x ,y + 1, oCol);
 inWater		=	false;
+
+//Set Coordinates
+if global.targetX != -1
+{
+	x = global.targetX;
+	y = global.targetY;
+	inputDir = global.targetDir;
+}

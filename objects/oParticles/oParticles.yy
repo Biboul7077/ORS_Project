@@ -8,8 +8,8 @@
   "name":"oParticles",
   "overriddenProperties":[],
   "parent":{
-    "name":"Management",
-    "path":"folders/Objets/Management.yy",
+    "name":"Asset",
+    "path":"folders/Objets/Asset.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -15,7 +15,7 @@ draw_set_color($f4bb41);
 draw_set_color($f4bb41);
 draw_rectangle(0,transparencyBufferHeight,sprite_width,sprite_height+transparencyBufferHeight,false);
 draw_set_color($f4eb42);
-draw_line_width(0, transparencyBufferHeight+2, sprite_width, transparencyBufferHeight+1, 2);
+draw_line_width(0, transparencyBufferHeight+2, sprite_width, transparencyBufferHeight+2, 2);
 
 draw_set_color(c_white);
 draw_line_width(0, transparencyBufferHeight, sprite_width, transparencyBufferHeight,2);

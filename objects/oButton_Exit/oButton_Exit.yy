@@ -11,7 +11,7 @@
   ],
   "parent":{
     "name":"Button_Menu",
-    "path":"folders/Objets/Management/Menu&Init/Button_Menu.yy",
+    "path":"folders/Objets/Management/Menu & Initialisation/Button_Menu.yy",
   },
   "parentObjectId":{
     "name":"oButton_Parent",

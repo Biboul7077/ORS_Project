@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":84.312,
+  "duration":84.31202,
   "exportDir":"",
   "name":"Main_Title__ORS",
   "parent":{

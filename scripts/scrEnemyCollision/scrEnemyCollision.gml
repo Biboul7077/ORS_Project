@@ -19,4 +19,6 @@ function Enemy_Collision()
 		_collision = true;
 	}
 	y = y + vsp;
+	
+	return _collision;
 }

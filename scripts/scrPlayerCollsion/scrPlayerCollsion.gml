@@ -1,13 +1,13 @@
-function Player_Collision()
+function Player_Collision(_checkingX = false, _checkingY = false)
 {
-	var _collision = false;
+	var _collisionCheck = false;
 
 	if place_meeting(x+hsp,y,oCol) {
 		while !place_meeting(x+sign(hsp),y,oCol) {
 			x = x + sign(hsp)
 		}
 		hsp = 0;
-		_collision = true;
+		if _checkingX _collisionCheck = true;
 	}
 	x = x + hsp;
 
@@ -16,7 +16,9 @@ function Player_Collision()
 			y = y + sign(vsp)
 		}
 		vsp = 0;
-		_collision = true;
+		if _checkingY _collisionCheck = true;
 	}
 	y = y + vsp;
+	
+	return _collisionCheck;
 }

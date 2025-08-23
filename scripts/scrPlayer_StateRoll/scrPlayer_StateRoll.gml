@@ -3,7 +3,9 @@ function Player_StateRoll(){
 	vsp = vsp + grv;
 	
 	moveDistRemain = max(0, moveDistRemain - spdRoll);
-	var _collided = Player_Collision();
+	var _checkingX = true;
+	var _checkingY = false;
+	var _collided = Player_Collision(_checkingX, _checkingY);
 	
 	sprite_index = spriteRoll;
 	var _totalFrames = sprite_get_number(sprite_index);
