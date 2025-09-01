@@ -5,7 +5,7 @@ function DialogueRepertory(_textID)
 		case "npc_1":
 			TextSetup("NAR_call_S");
 			TextSetup("INTRO_call_S", CHARACTER.DOC_S, EXPRESSION.SHY);
-			OptionSetup(REACTION.HAPPY, "npc_1 - pos_ans");
+			OptionSetup(REACTION.EXCITED, "npc_1 - pos_ans");
 			OptionSetup(REACTION.ANGRY, "npc_1 - neg_ans");
 			break;
 		
