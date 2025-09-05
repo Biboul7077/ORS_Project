@@ -69,6 +69,7 @@
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"DialogueRepertory.json","CopyToMask":-1,"filePath":"datafiles","name":"DialogueRepertory.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"ORS_locale.csv","CopyToMask":-1,"filePath":"datafiles","name":"ORS_locale.csv","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"President Evil.ttf","CopyToMask":-1,"filePath":"datafiles","name":"President Evil.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],

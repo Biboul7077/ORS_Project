@@ -1,0 +1,93 @@
+{
+  "npc_1": {
+    "steps": [
+      {
+        "id": "NAR_call_S",
+        "character": "NARRATOR",
+        "expression": "NONE",
+        "effects": []
+      },
+      {
+        "id": "INTRO_call_S",
+        "character": "DOC_S",
+        "expression": "SHY",
+        "effects": []
+      }
+    ],
+    "options": [
+      {
+        "reaction": "EXCITED",
+        "next": "npc_1_pos_ans"
+      },
+      {
+        "reaction": "ANGRY",
+        "next": "npc_1_neg_ans"
+      }
+    ]
+  },
+
+  "npc_1_pos_ans": {
+    "steps": [
+      {
+        "id": "ANS_pos_S",
+        "character": "DOC_S",
+        "expression": "HAPPY",
+        "effects": []
+      },
+      {
+        "id": "INTER_Agent",
+        "character": "DOC_S",
+        "expression": "SHY",
+        "effects": [
+          {
+            "type": "CENSOR",
+            "lang": "EN",
+            "start": 10,
+            "end": 18
+          },
+          {
+            "type": "CENSOR",
+            "lang": "FR",
+            "start": 12,
+            "end": 20
+          }
+        ]
+      },
+      {
+        "id": "END_call_S",
+        "character": "DOC_S",
+        "expression": "EMBARASSED",
+        "effects": []
+      },
+      {
+        "id": "END_Agent",
+        "character": "DOC_S",
+        "expression": "EMBARASSED",
+        "effects": []
+      },
+      {
+        "id": "NAR_end_call_S",
+        "character": "DOC_S",
+        "expression": "HAPPY",
+        "effects": []
+      }
+    ]
+  },
+
+  "npc_1_neg_ans": {
+    "steps": [
+      {
+        "id": "ANS_neg_S",
+        "character": "DOC_S",
+        "expression": "EMBARASSED",
+        "effects": []
+      },
+      {
+        "id": "INTER_Agent",
+        "character": "DOC_S",
+        "expression": "SHY",
+        "effects": []
+      }
+    ]
+  }
+}

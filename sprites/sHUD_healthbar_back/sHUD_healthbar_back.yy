@@ -19,6 +19,7 @@
   "height":64,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"d3778920-0914-4328-bc67-7362415b4e2c","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"d3778920-0914-4328-bc67-7362415b4e2c","opacity":10.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"d7fbb68f-f77d-4de6-977b-040d3ff17b8f","blendMode":0,"displayName":"default","isLocked":false,"name":"d7fbb68f-f77d-4de6-977b-040d3ff17b8f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sHUD_healthbar_back",

@@ -10,8 +10,8 @@ if instance_exists(oPlayer) {
 
 		global.color = make_colour_rgb(r,g,b);
 	}
-	draw_sprite_ext(sHUD_healthbar_back, 0, healthbar_x, healthbar_y, 1,1,0,global.color,1);
-	draw_sprite(sHUD_healthbar_border, global.ammo, healthbar_x, healthbar_y);
+	draw_sprite_ext(sHUD_healthbar_back, 0, 8, 8, 1,1,0,global.color,1);
+	draw_sprite(sHUD_healthbar_border, global.ammo, 8, 8);
 	draw_set_color(c_lime);
 	draw_set_font(Fnt_Name);
 	draw_text(healthbar_x, healthbar_y+36, "$ " + string(global.coin));
