@@ -10,8 +10,8 @@
   "name":"oWater",
   "overriddenProperties":[],
   "parent":{
-    "name":"Miscellaneous",
-    "path":"folders/Objets/Asset/Miscellaneous.yy",
+    "name":"Asset",
+    "path":"folders/Objets/Asset.yy",
   },
   "parentObjectId":null,
   "persistent":false,
