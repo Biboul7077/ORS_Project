@@ -5,7 +5,7 @@ function SaveGame()
 	_map[? "room"] = room;
 	_map[? "targetX"] = global.targetX;
 	_map[? "targetY"] = global.targetY;
-	_map[? "money"] = global.coin;
+	_map[? "money"] = global.currencyTotal;
 	_map[? "heat"] = global.hp;
 	
 	var _string = json_encode(_map);

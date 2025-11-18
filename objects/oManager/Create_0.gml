@@ -11,21 +11,16 @@ global.targetDir	= 1;
 
 //Textbox
 global.textSpd	= .75;
-global.fntTextboxes = font_add("President Evil.ttf", 12, false, false, 32, 128);
-
-//Waves Variable
-global.u_pixelH_Wave = shader_get_uniform(shWave,"pixelH");
-global.u_pixelW_Wave = shader_get_uniform(shWave,"pixelW");
-global.u_springCount = shader_get_uniform(shWave,"springCount");
-global.u_springs = shader_get_uniform(shWave,"pixelsprings");
-global.u_time = shader_get_uniform(shWave,"time");
 
 //Player Stats
 global.ammo		= 4;
 global.color	= c_red;
-global.coin		= 0;
 global.dmg		= 5;
 global.hp		= 4;
+
+global.currencyTotal	= 0;
+global.currencyBuffer	= 0;
+global.currencyTimer	= 0;
 
 //Respawn
 global.savespot	= noone;

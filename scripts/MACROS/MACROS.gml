@@ -6,13 +6,23 @@
 #macro	RESOLUTION_W	640
 #macro	RESOLUTION_H	360
 
-#macro WATERDIVISION	5
+#macro FNT_TEXT font_add("President Evil.ttf", 12, false, false, 32, 128)
 
 //TRANSITION
 #macro	TRANSITION_SPEED	0.02
 #macro	OUT	0
 #macro	IN	1
 
+//CURRENCY
+#macro	CURRENCY_CAP 9999999
+#macro	CURRENCY_DELAY 90
+#macro	CURRENCY_ADDITION_SPEED 2
+
+//GRAVITY
+#macro WATER_GRAVITY	0.02
+#macro AIR_GRAVITY		0.5
+
+//TRANSITION TYPE
 enum TRANS_TYPE
 {
 	SLIDE,
@@ -28,10 +38,6 @@ enum SOUND_PRIORITY
 	FX,
 	MUSIC
 }
-
-//GRAVITY
-#macro WATER_GRAVITY	0.02
-#macro AIR_GRAVITY		0.5
 
 //ENEMY AI
 enum	ENEMYSTATE

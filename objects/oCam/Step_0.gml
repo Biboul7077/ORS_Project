@@ -20,7 +20,19 @@ y += random_range(-shakeRemain, shakeRemain);
 shakeRemain = max(0, shakeRemain - ((1/shakeLength) * shakeMag));
 
 camera_set_view_pos(cam, x - view_w_half, y - view_h_half)
-//Parallax Background
-var _nearBackground	= layer_get_id("Skyline_Background");
 
-layer_x(_nearBackground, lerp(0, camera_get_view_x(cam), 0.5));
+//Parallax Background
+var _farSkyline	= layer_get_id("Skyline_Back");
+var _midSkyline	= layer_get_id("Skyline_Mid");
+var _nearSkyline	= layer_get_id("Skyline_Front");
+var _foreGround = layer_get_id("Foreground")
+
+layer_x(_nearSkyline, lerp(0, camera_get_view_x(cam), 0.3));
+layer_x(_midSkyline, lerp(0, camera_get_view_x(cam), 0.5));
+layer_x(_farSkyline, lerp(0, camera_get_view_x(cam), 0.7));
+layer_x(_foreGround, lerp(0, camera_get_view_x(cam), 0.2) - 256);
+
+layer_y(_nearSkyline, lerp(0, camera_get_view_y(cam), 0.2));
+layer_y(_midSkyline, lerp(0, camera_get_view_y(cam), 0.4));
+layer_y(_farSkyline, lerp(0, camera_get_view_y(cam), 0.6));
+layer_y(_foreGround, camera_get_view_y(cam));

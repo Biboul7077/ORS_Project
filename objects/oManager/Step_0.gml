@@ -11,3 +11,18 @@ if global.hp <= 0.01
 {
 	game_restart();
 }
+
+if global.currencyBuffer > 0
+{
+	if global.currencyTimer > 0
+	{
+		global.currencyTimer --;
+	}
+	else
+	{
+		var _amount = min(CURRENCY_ADDITION_SPEED, global.currencyBuffer);
+		var _total = global.currencyTotal + _amount;
+		if _total < CURRENCY_CAP global.currencyTotal += _amount;
+		global.currencyBuffer -= _amount;
+	}
+}

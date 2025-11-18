@@ -1,1 +1,1 @@
-font_delete(global.fntTextboxes);
+font_delete(FNT_TEXT);

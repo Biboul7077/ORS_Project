@@ -7,15 +7,15 @@
   "managed":true,
   "name":"oButton_Options",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oButton_Parent","path":"objects/oButton_Parent/oButton_Parent.yy",},"propertyId":{"name":"button_text","path":"objects/oButton_Parent/oButton_Parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Options\"",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pButton","path":"objects/pButton/pButton.yy",},"propertyId":{"name":"button_text","path":"objects/pButton/pButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Options\"",},
   ],
   "parent":{
     "name":"Button_Menu",
     "path":"folders/Objets/Management/Menu & Initialisation/Button_Menu.yy",
   },
   "parentObjectId":{
-    "name":"oButton_Parent",
-    "path":"objects/oButton_Parent/oButton_Parent.yy",
+    "name":"pButton",
+    "path":"objects/pButton/pButton.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -10,7 +10,6 @@ kActivate	=	keyboard_check_pressed(vk_space);
 
 //Movement
 onGround	= place_meeting(x ,y + 1, oCol);
-inWater		= place_meeting(x, y, oWater);
 if !global.gamePaused
 {
 	script_execute(state);

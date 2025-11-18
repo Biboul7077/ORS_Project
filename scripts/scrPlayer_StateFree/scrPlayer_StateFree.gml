@@ -13,7 +13,7 @@ function Player_StateFree() {
 	}
 
 	// === COYOTE TIME ===
-	if (onGround || inWater) {
+	if (onGround) {
 		coyoteTimer = coyoteTimeMax;
 		jumpCount = 0;
 	} else {
@@ -29,7 +29,7 @@ function Player_StateFree() {
 	}
 
 	// === GRAVITÉ SPÉCIFIQUE EAU / SOL ===
-	grv = inWater ? WATER_GRAVITY : AIR_GRAVITY;
+	grv = AIR_GRAVITY;
 	
 	// === SAUT ===
 	if (jumpBuffer > 0 && (coyoteTimer > 0 || jumpCount < jumpMax)) {

@@ -5,13 +5,13 @@
         "id": "NAR_call_S",
         "character": "NARRATOR",
         "expression": "NONE",
-        "effects": []
+        "effect": []
       },
       {
         "id": "INTRO_call_S",
         "character": "DOC_S",
         "expression": "SHY",
-        "effects": []
+        "effect": []
       }
     ],
     "options": [
@@ -32,13 +32,13 @@
         "id": "ANS_pos_S",
         "character": "DOC_S",
         "expression": "HAPPY",
-        "effects": []
+        "effect": []
       },
       {
         "id": "INTER_Agent",
         "character": "DOC_S",
         "expression": "SHY",
-        "effects": [
+        "effect": [
           {
             "type": "CENSOR",
             "lang": "EN",
@@ -57,19 +57,19 @@
         "id": "END_call_S",
         "character": "DOC_S",
         "expression": "EMBARASSED",
-        "effects": []
+        "effect": []
       },
       {
         "id": "END_Agent",
         "character": "DOC_S",
         "expression": "EMBARASSED",
-        "effects": []
+        "effect": []
       },
       {
         "id": "NAR_end_call_S",
         "character": "DOC_S",
         "expression": "HAPPY",
-        "effects": []
+        "effect": []
       }
     ]
   },
@@ -80,13 +80,13 @@
         "id": "ANS_neg_S",
         "character": "DOC_S",
         "expression": "EMBARASSED",
-        "effects": []
+        "effect": []
       },
       {
         "id": "INTER_Agent",
         "character": "DOC_S",
         "expression": "SHY",
-        "effects": []
+        "effect": []
       }
     ]
   }

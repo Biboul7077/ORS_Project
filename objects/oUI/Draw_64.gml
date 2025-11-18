@@ -1,4 +1,4 @@
-var percentHp = 1 - global.hp/6
+var percentHp = 2 - global.hp/6
 
 if instance_exists(oPlayer) {
 	draw_set_alpha(1);
@@ -10,11 +10,17 @@ if instance_exists(oPlayer) {
 
 		global.color = make_colour_rgb(r,g,b);
 	}
-	draw_sprite_ext(sHUD_healthbar_back, 0, 8, 8, 1,1,0,global.color,1);
-	draw_sprite(sHUD_healthbar_border, global.ammo, 8, 8);
-	draw_set_color(c_lime);
+	draw_sprite(sHeatbarBorder, 0, 16, 16);
+	draw_sprite_ext(sHeatbarFiller, 0, 16, 16, percentHp, 1, 0, c_white, 1);
+	draw_set_color(c_white);
 	draw_set_font(Fnt_Name);
-	draw_text(healthbar_x, healthbar_y+36, "$ " + string(global.coin));
+	draw_text(healthbar_x, healthbar_y+36, "$ " + string(global.currencyTotal));
+	
+	draw_set_colour(#CDCDCD);
+	if global.currencyBuffer > 0
+	{
+		draw_text(healthbar_x, healthbar_y + 64, "+ $ " + string(global.currencyBuffer));
+	}
 }
 
 ///Pause Screen
