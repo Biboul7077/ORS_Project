@@ -6,7 +6,7 @@ function SaveGame()
 	_map[? "targetX"] = global.targetX;
 	_map[? "targetY"] = global.targetY;
 	_map[? "money"] = global.currencyTotal;
-	_map[? "heat"] = global.hp;
+	_map[? "heat"] = global.playerHealth;
 	
 	var _string = json_encode(_map);
 	SaveStringToFile($"save_{global.gameSaveSlot}.sav", _string);

@@ -10,13 +10,15 @@ global.targetY		= 256;
 global.targetDir	= 1;
 
 //Textbox
-global.textSpd	= .75;
+global.textSpeed	= .75;
 
 //Player Stats
-global.ammo		= 4;
-global.color	= c_red;
-global.dmg		= 5;
-global.hp		= 4;
+global.playerHealthMax	= 6;
+global.playerAmmoMax	= 4;
+global.playerHealth		= global.playerHealthMax;
+global.playerAmmo		= global.playerAmmoMax;
+global.playerFlashColor	= c_red;
+global.playerDamage		= 5;
 
 global.currencyTotal	= 0;
 global.currencyBuffer	= 0;

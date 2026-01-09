@@ -28,9 +28,6 @@ if global.gamePaused
 				SaveGame();
 				game_end();
 				break;
-		    default:
-		        // code here
-		        break;
 		}
 	}
 }

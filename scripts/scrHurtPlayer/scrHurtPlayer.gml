@@ -2,9 +2,9 @@ function HurtPlayer(_force,_damage)
 {
 	if oPlayer.invincible <= 0 && oPlayer.state != Player_StateRoll
 	{
-		global.hp = max(0, global.hp - _damage);
+		global.playerHealth = max(0, global.playerHealth - _damage);
 		
-		if global.hp > 0
+		if global.playerHealth > 0
 		{
 			with oPlayer
 			{
@@ -13,7 +13,7 @@ function HurtPlayer(_force,_damage)
 				moveDistRemain = _force;
 				ScreenShake(2,10);
 				flashAlpha = 1;
-				flashColor = global.color;
+				flashColor = global.playerFlashColor;
 				invincible = 60
 			}
 		}

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scrEnemyCollision",
   "parent":{
-    "name":"Enemy Scripts",
-    "path":"folders/Scripts/Enemy Scripts.yy",
+    "name":"Enemy General",
+    "path":"folders/Scripts/Enemy Scripts/Enemy General.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

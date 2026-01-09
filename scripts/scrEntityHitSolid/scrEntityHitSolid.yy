@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scrEntityHitSolid",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Enemy Scripts",
+    "path":"folders/Scripts/Enemy Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

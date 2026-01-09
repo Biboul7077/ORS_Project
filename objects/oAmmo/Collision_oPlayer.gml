@@ -1,2 +1,2 @@
-global.ammo += 1;
+global.playerAmmo += 1;
 instance_destroy();

@@ -14,11 +14,11 @@ function Player_Shoot()
 
 		if (mouse_check_button_pressed(mb_left)) && firing_delay < 0 && reload_delay < 0
 		{
-			if global.ammo > 0
+			if global.playerAmmo > 0
 			{
 				recoil = 4;
 				firing_delay = 8;
-				global.ammo -= 1;
+				global.playerAmmo -= 1;
 				with instance_create_layer(x+_lengthX,y+_lengthY,"Inst_Entity",oBullet)
 				{
 					speed = 12;
@@ -35,14 +35,14 @@ function Player_Shoot()
 
 		if kReload
 		{
-			reload_delay = 80 - global.ammo * 20;
+			reload_delay = 80 - global.playerAmmo * 20;
 			reloading = true;
 		}
 
 		if reloading
 		{
 			if reload_delay < 0 reloading = false;
-			else global.ammo = (80 - reload_delay) / 20;
+			else global.playerAmmo = (80 - reload_delay) / 20;
 		}
 
 		x = x - lengthdir_x(recoil,image_angle);

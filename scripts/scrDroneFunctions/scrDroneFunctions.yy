@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scrDroneFunctions",
   "parent":{
-    "name":"Enemy Scripts",
-    "path":"folders/Scripts/Enemy Scripts.yy",
+    "name":"Enemy States",
+    "path":"folders/Scripts/Enemy Scripts/Enemy States.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

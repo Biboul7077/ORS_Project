@@ -1,3 +1,4 @@
-function EntityHitSolid(){
+function EntityHitSolid()
+{
 	flashAlpha = 1;
 }

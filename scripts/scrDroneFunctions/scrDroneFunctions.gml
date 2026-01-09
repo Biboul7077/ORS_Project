@@ -88,7 +88,7 @@ function DroneAttack()
 	var _playerDir = point_direction(x, y, oPlayer.x, oPlayer.y);
 	var _MarginOfError = irandom_range(-15, 15);
 
-	if timer % 45 == 0
+	if timer == enemyAttackDelay 
 	{
 		pattern_fire({
 			X: x,
@@ -102,10 +102,37 @@ function DroneAttack()
 	        bullet_sprite: sBullet_Enemy
 	    });
 	}
-	if timer % 50 == 0
+	if timer == enemyAttackDelay + 15
 	{
 		state = ENEMYSTATE.CHASE;
 		timer = 0;
+	}
+}
+
+function ShotgunAttack()
+{
+	timer++;
+	var _playerDir		= point_direction(x, y, oPlayer.x, oPlayer.y);
+	var _MarginOfError	= irandom_range(-15, 15);
+	var _knockback		= 64;
+
+	if timer == enemyAttackDelay
+	{
+		pattern_fire({
+			X: x,
+		    Y: y,
+			bullet_speed: 1.33,
+			bullet_damage: 1,
+	        count: 3,
+	        angle_start: _playerDir + _MarginOfError,
+	        angle_range: 45,
+	        angle_offset: 0,
+	        bullet_sprite: sBullet_Enemy
+	    });
+		xTo = x - lengthdir_x(_knockback, -_playerDir);
+		yTo = y - lengthdir_y(_knockback, -_playerDir);
+		state = ENEMYSTATE.HURT;
+		timer = 0;	
 	}
 }
 

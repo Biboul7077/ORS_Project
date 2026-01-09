@@ -42,6 +42,7 @@
     {"$GMObjectProperty":"v2","%Name":"enemyForceTouch","filters":[],"listItems":[],"multiselect":false,"name":"enemyForceTouch","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"64","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"enemyDamageTouch","filters":[],"listItems":[],"multiselect":false,"name":"enemyDamageTouch","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.5","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"enemyMoneyLoot","filters":[],"listItems":[],"multiselect":false,"name":"enemyMoneyLoot","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[0,0,0]","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"enemyAttackDelay","filters":[],"listItems":[],"multiselect":false,"name":"enemyAttackDelay","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"45","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -7,7 +7,7 @@ if keyboard_check_pressed(vk_numpad2) global.locale = LOCALE.DE;
 cursor_sprite = sTarget;
 window_set_cursor(cr_none);
 
-if global.hp <= 0.01
+if global.playerHealth <= 0.01
 {
 	game_restart();
 }

@@ -9,7 +9,7 @@ function LoadGame(_slot)
 		global.targetX = _json[? "targetX"];
 		global.targetY = _json[? "targetY"];
 		global.currencyTotal = _json[? "money"];
-		global.hp = _json[? "heat"];
+		global.playerHealth = _json[? "heat"];
 		
 		RoomTransition(TRANS_TYPE.SLIDE, _json[? "room"]);
 		ds_map_destroy(_json);
